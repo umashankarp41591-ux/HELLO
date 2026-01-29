@@ -1,5 +1,7 @@
 class code5{
     public static void main(String[]args){
-        
+        double a = 3.14*2*10;
+        System.out.println(a);
     }
+
 }
