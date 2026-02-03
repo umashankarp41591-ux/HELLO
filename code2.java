@@ -1,11 +1,13 @@
-class code2{
-    public static void main(String[]args){
-        displayScore(85);
-    }
+class Rectangle {
+    int length;
+    int width;
 
-    // 'void' means no return type
-    // 'int score' is the parameter
-    public static void displayScore(int score) {
-        System.out.println("The current score is: " + score);
+    public static void main(String[] args) {
+        Rectangle r = new Rectangle();
+        r.length = 10;
+        r.width = 5;
+
+        System.out.println("Area: " + (r.length * r.width));
+        System.out.println("Perimeter: " + (2 * (r.length + r.width)));
     }
 }

@@ -1,20 +1,17 @@
-class code5{
-    public static void main(String[]args){
-int length = 5;
-        int width = 10;
-        int result = calculateArea(length, width);
+class Employee {
+    String name;
+    double basicSalary;
 
-        System.out.println("The area of the rectangle is: " + result);
-    }
+    public static void main(String[] args) {
+        Employee emp = new Employee();
+        emp.name = "Alice";
+        emp.basicSalary = 50000;
 
-    /**
-     * This method takes two parameters and returns an integer.
-     * @param l - Length (Parameter 1)
-     * @param w - Width (Parameter 2)
-     * @return The product of l and w (Return Type: int)
-     */
-    public static int calculateArea(int l, int w) {
-        int area = l * w;
-        return area; // Sending the value back to the caller
+        double hra = emp.basicSalary * 0.2;  // 20% HRA
+        double da = emp.basicSalary * 0.1;   // 10% DA
+        double grossSalary = emp.basicSalary + hra + da;
+
+        System.out.println("Employee: " + emp.name);
+        System.out.println("Gross Salary: " + grossSalary);
     }
 }
